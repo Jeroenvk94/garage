@@ -1,0 +1,154 @@
+html{
+    color: snow;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(to bottom right, #0f539b, #2e9ecd);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+img{
+    margin-bottom: -2ch;
+}
+
+body {
+    margin-left: 1.5ch;
+    margin-right: 1.5ch;
+}
+
+h2{
+    color: white;
+}
+
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 1s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #54849b;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    width: 95%;
+    margin-bottom: 2ch;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+tr{
+    background-color: #fff;
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+th {
+    background-color: #007838;
+    color: white;
+}
+
+
+#myInput{
+    width: 62ch;
+    padding-top: 1ch;
+    padding-bottom: 1ch;
+    padding-left: 1ch;
+}
+
+/***************/
+/*****forms*****/
+/***************/
+form{
+    padding: 1ch;
+    margin-bottom: 1ch;
+}
+
+input{
+    border: 1px solid;
+    border-bottom: 3px solid;
+    padding: 2ch;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 3ch;
+    width: 98%;
+}
+
+input:focus{
+    outline: none;
+}
+
+.btn{
+    width: 20ch;
+    background-color: #3CBC8D;
+    border: 1px solid !important;
+    border-radius: 5px!important;
+    cursor: pointer;
+}
+
+.box{
+    width: auto;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 2.5ch;
+    right: 1.8ch;
+    z-index: 1;
+    font-size: 2.3ch;
+    border: none;
+    outline: none;
+    background-color: mediumblue;
+    color: white;
+    cursor: pointer;
+    padding: 1.5ch;
+    border-radius: 5px;
+}
