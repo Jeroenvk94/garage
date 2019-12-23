@@ -1,7 +1,7 @@
 <head>
     <meta name="author" content="Julian Ciuciumis">
     <meta charset="UTF-8">
-    <title>gar-menu.php</title>
+    <title>gar-menu</title>
 </head>
 <style>
     html{
